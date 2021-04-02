@@ -1,0 +1,235 @@
+/*===============================
+
+
+  Universal Styling
+
+
+*===============================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 48px;
+}
+/*===============================
+
+
+  Header Styling
+
+
+*===============================*/
+header {
+    background: rgb(0 0 0 / 70%);
+    padding: 30px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header a {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: lime;
+    margin: 0 20px;
+}
+
+/*===============================
+
+
+  Hero section Styling
+
+
+*===============================*/
+
+.top-hero {
+    background: url('../images/hero-image.jpg') right/cover no-repeat fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+.top-hero img {
+    margin: 100px 0 0 200px;
+    max-width: 600px;
+}
+
+.hero-content {
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+}
+
+.hero-content p {
+  font-size: 24px;
+}
+
+/*===============================
+
+
+  Specs section Styling
+
+
+*===============================*/
+.specs {
+    background: url('../images/specs-background.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.main-specs {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px black;
+    margin-top: 70px;
+}
+
+.highlight {
+    font-size: 50px;
+    color: #9bf00b;
+}
+
+.specs:before,
+.individual-game:before,
+.games:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, black, transparent);
+    z-index: 1;
+}
+
+.specs h3 {
+    font-size: 65px;
+    color: yellow;
+    text-align: center;
+    max-width: 500px;
+    margin: 70px auto;
+    text-shadow: 1px 1px 4px black;
+}
+
+/*===============================
+
+
+  Games section Styling
+
+
+*===============================*/
+
+.games {
+    background: url('../images/halo-background.jpg') center/cover no-repeat fixed;
+    min-height: 100vh;
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.games h2 {
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.games h2:before {
+    content: "\f412";
+    font-family: "Font Awesome 5 Brands";
+    margin: 0 10px;
+    color: #9bf00b;
+    font-size: 36px;
+}
+
+.featured-game {
+    color: white;
+    max-width: 500px;
+    float: right;
+    margin-right: 14%;
+    position: relative;
+    z-index: 2;
+}
+
+.featured-game h3 {
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.master-chief {
+    color: #9bf00b;
+    font-size: 72px;
+    text-shadow: 1px 1px 4px black;
+}
+
+.featured-game h3 {
+    font-size: 64px;
+    text-transform: uppercase;
+    max-width: 400px;
+}
+
+.learn-more {
+    background: #9bf00b;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.other-games-container {
+    clear: both;
+    padding-top: 75px;
+    text-align: center;
+}
+
+.individual-game {
+    width: 19%;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.individual-game h3 {
+    position: absolute;
+    bottom: 60px;
+    color: white;
+    width: 100%;
+    font-size: 32px;
+    padding: 0 10px;
+    z-index: 2;
+}
+
+.game-background {
+    width: 100%;
+}
